@@ -22,8 +22,15 @@ or if p2 is an element of [3.8, 4.9) it will yield 2 poses etc.
 (3) To evaluate the structure over some theta, p2 run
 ```matlab
 f = @evaluateStruts;
-theta = -pi:.1:pi; %evaluate over theta = [-pi, pi]
-out = f(theta, f(theta, p2))
+theta = pi; %evaluate over theta = pi
+out = f(theta, p2))
+```
+
+(4) To plot the structure over some interval, theta (for some p2) run
+```matlab
+f = @evaluateStruts;
+theta = pi:.1:pi; %evaluate over theta = [-pi, pi]
+plot(theta, f(theta, p2))
 ```
 
 Currently, evaluateStruts will NOT plot anything, however, to make it plot the structure for a given theta 
