@@ -1,6 +1,6 @@
 # assignment-1
 ## How to run:
-(1) To find the number of zeroes (i.e. poses) for a given value of p2 (i.e. the length of the second strut), run
+(1) To find the zeroes (i.e. poses) for a given value of p2 (i.e. the length of the second strut), run
 ```matlab
 f = @findNumberOfZeroes;
 [numberOfZeroes, zeroes] = f(p2)
@@ -23,7 +23,7 @@ or if p2 is an element of [3.8, 4.9) it will yield 2 poses etc.
 ```matlab
 f = @evaluateStruts;
 theta = pi; %evaluate over theta = pi
-out = f(theta, p2))
+out = f(theta, p2)
 ```
 
 (4) To plot the structure over some interval, theta (for some p2) run
