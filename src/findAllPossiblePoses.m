@@ -18,7 +18,7 @@
 % value is 0.
 %
 %
-function [keySet valueSet] = findAllPossiblePoses()
+function [keySet, valueSet] = findAllPossiblePoses()
 
 began = false;
 keySet = {};

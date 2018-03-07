@@ -49,20 +49,6 @@ N2 = -1.*A3.*(p2.^2 - p1.^2 - A2.^2 - B2.^2) + A2.*(p3.^2-p1.^2-A3.^2-B3.^2);
 
 D = 2.*((A2.*B3)-(B2.*A3));
 
-u1 = N1/D;      % the value of x (where the first strut meets the structure)
-v1 = N2/D;      % the value of y
-u2 = u1 + L2.*cos(theta+gamma);
-v2 = v1 + L2.*sin(theta+gamma);
-u3 = u1 + L3.*cos(theta);
-v3 = v1 + L3.*sin(theta);
-
-%{
-plot([u1 u2 u3 u1], [v1 v2 v3 v1], 'r'); hold on
-plot([0 x1 x2], [0 0 y2], 'bo')
-plot([0 u1], [0 v1], 'b')
-plot([x2 u3], [y2 v3], 'b')
-plot([x1 u2], [0 v2], 'b')
-%}
-
 out = (N1.^2+N2.^2-p1.^2.*D.^2);
+
 end
