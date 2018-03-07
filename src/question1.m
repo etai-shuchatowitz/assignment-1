@@ -1,7 +1,7 @@
 % 
 % Description
 % -----------
-% Function evaluateStruts in a single unknown theta given in the book [Sauer], p. 68.
+% Function question1 in a single unknown theta given in the book [Sauer], p. 68.
 % The roots f(theta)=0 of this auxiliary function are solutions to the direct 
 % kinematics problem of the planar Stewart platform. 
 %

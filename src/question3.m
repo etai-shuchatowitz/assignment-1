@@ -1,5 +1,6 @@
 % draw the struts for question1
 
+% First possible
 u1 = 1;
 u2 = 2;
 u3 = 2;
@@ -20,7 +21,7 @@ waitforbuttonpress;
 hold off;
 
 
-
+% second possible
 u1 = 2;
 u2 = 3;
 u3 = 1;

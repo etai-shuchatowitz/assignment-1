@@ -1,7 +1,7 @@
 % 
 % Description
 % -----------
-% Function question7 calculates the intervals over p2, for which there
+% Function findAllPossiblePoses calculates the intervals over p2, for which there
 % are varying poses. That is, it will determine over which interval for p2, 
 % evaluateStruts has 0, 2, 4 and 6 different poses. It returns:
 % keySet, an array of the various number of poses possible.
@@ -18,28 +18,21 @@
 % value is 0.
 %
 %
-function [keySet, valueSet] = question7()
+function p2 = question6()
+
 prevNumberOfZeroes = 0;
 currentNumberOfZeroes = 0;
 
-keyTally = 1;     % to keep track of where I am in my keySet and valueSet
-
-begin = 0;        % to keep track of the beginning of my interval
-finish = 0;       % to keep track of the end of my interval
-
   for i = 0:.1:20
-    
     currentNumberOfZeroes = findNumberOfZeroes(i);  % for the current value of p2, determine how many poses there are
     
     % if the number of poses has changed since previous, add values to my keySet
     % and my valueSet and restart the counts
-    if currentNumberOfZeroes != prevNumberOfZeroes  
-      finish = i;      
-      X = ["If p2 is in the interval [",  num2str(begin), ", ", num2str(finish), "), then there will be ", num2str(prevNumberOfZeroes), " poses possible."];
-      disp(X)
-      begin = i; 
-    end 
-    prevNumberOfZeroes = currentNumberOfZeroes;
+    if currentNumberOfZeroes == 2
+      i
+      break;
+    end ;
   end
 
+p2 = i;
 end
